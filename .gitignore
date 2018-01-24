@@ -1,0 +1,10 @@
+node_modules
+tags
+dist
+package-lock.json
+
+*~
+*.swp
+*.swo
+
+*.DS_store
