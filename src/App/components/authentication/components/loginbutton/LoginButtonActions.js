@@ -41,7 +41,7 @@ console.log(AuthenticationContract);
           authenticationInstance.login({from: coinbase})
           .then(function(result) {
             // If no error, login user.
-            var userName = web3.toUtf8(result)
+            var userName = web3.utils.toUtf8(result)
 
             dispatch(userLoggedIn({"name": userName}))
 

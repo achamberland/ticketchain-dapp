@@ -1,12 +1,14 @@
 import { combineReducers } from 'redux'
 import { routerReducer } from 'react-router-redux'
-import userReducer from './App/views/user/userReducer'
+import tokenReducer from './App/components/tokeninterface/issuetoken/issueTokenReducer'
+import authReducer from './App/components/authentication/authReducer'
 import web3Reducer from './App/shared/util/web3/web3Reducer'
 
 const reducer = combineReducers({
   routing: routerReducer,
-  user: userReducer,
-  web3: web3Reducer
+  token: tokenReducer,
+  user: authReducer,
+  web3: web3Reducer,
 })
 
 export default reducer

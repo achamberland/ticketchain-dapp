@@ -2,6 +2,9 @@ node_modules
 tags
 dist
 package-lock.json
+.tern-project
+build_webpack/
+build/
 
 *~
 *.swp
